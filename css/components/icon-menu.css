@@ -1,0 +1,21 @@
+.icon-menu {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  font-size: 22px;
+  margin-bottom: 55px;
+}
+.icon-menu div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.icon-menu i {
+  font-size: 64px;
+  margin-bottom: 8px;
+}
+.icon-menu img {
+  width: 90px;
+  height: 90px;
+  border-radius: 30%;
+}

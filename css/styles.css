@@ -1,0 +1,50 @@
+@import url("reset.css");
+@import url("var.css");
+@import url("components/header_nav_title.css");
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  color: var(--black-color);
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 120px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--black-color);
+}
+h2 {
+  font-size: 28px;
+  color: var(--grey-color);
+}
+i {
+  position: relative;
+}
+#resolution-check {
+  position: absolute;
+  z-index: 99;
+  height: 100vh;
+  width: 100vw;
+  background-color: lightgreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  top: 0;
+}
+@media screen and (min-width: 640px) {
+  #resolution-check {
+    display: none;
+  }
+}

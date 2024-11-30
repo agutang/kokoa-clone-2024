@@ -1,0 +1,19 @@
+@import url(components/user-profile.css);
+@import url(components/divider.css);
+.friends__info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(250, 250, 250);
+  width: 100%;
+  padding: 20px 0;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+.friends__info i {
+  color: rgb(215, 215, 215);
+  margin: 0 10px;
+}
+.friends__info i:first-of-type {
+  font-size: 32px;
+}

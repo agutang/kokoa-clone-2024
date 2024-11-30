@@ -1,0 +1,142 @@
+body,
+.header-bar,
+.title-bar {
+  background-color: rgb(170, 190, 200);
+}
+
+.title-bar {
+  animation: titleSlideAnimation 0.3s ease-in-out forwards;
+}
+main {
+  animation: mainSlideAnimation 0.5s ease-in-out forwards;
+}
+
+.title-bar > a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 30%;
+}
+.title-bar div {
+  text-align: center;
+  width: 30%;
+}
+.title-bar div:last-child {
+  display: flex;
+  justify-content: flex-end;
+}
+.chat-date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 34px;
+  padding: 0 17px;
+  border-radius: 17px;
+  font-size: 18px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin-bottom: 15px;
+}
+.message--opponent {
+  width: 90%;
+  display: flex;
+  justify-content: start;
+}
+.message--opponent img {
+  width: 70px;
+  height: 70px;
+  border-radius: 40%;
+  margin-right: 15px;
+}
+.message--opponent p {
+  font-size: 24px;
+}
+.message--opponent__message__text {
+  display: flex;
+  align-items: end;
+}
+.message--opponent__message__text p {
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 15px;
+  border-top-left-radius: 0;
+  margin: 10px 5px 0 0;
+}
+.message--opponent__message__text span {
+  font-size: 16px;
+}
+.message--me {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  width: 90%;
+  margin: 25px 0;
+}
+.message--me p {
+  font-size: 24px;
+  background-color: lightgreen;
+  padding: 10px 20px;
+  border-radius: 15px;
+  border-top-right-radius: 0;
+  margin: 10px 0 0 5px;
+}
+.input-bar {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  background-color: rgb(250, 250, 250);
+  width: 100vw;
+  height: 80px;
+}
+.input-bar i {
+  font-size: 40px;
+}
+.input-bar > i {
+  margin: 0 20px;
+}
+.input-bar__input {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  width: 80%;
+  height: 60px;
+  border-radius: 30px;
+  background-color: rgb(235, 235, 235);
+}
+.input-bar__input button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  right: 5px;
+  background-color: white;
+}
+.input-bar__input > i {
+  position: absolute;
+  right: 60px;
+}
+.input-bar__input input {
+  width: 100%;
+  font-size: 24px;
+  background-color: rgb(235, 235, 235);
+  border: none;
+}
+
+@keyframes titleSlideAnimation {
+  0% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes mainSlideAnimation {
+  0% {
+    transform: translateY(100vh);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

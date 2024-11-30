@@ -1,0 +1,35 @@
+@import url(components/user-profile.css);
+@import url(components/icon-menu.css);
+@import url(components/divider.css);
+
+.user-profile__right-side i {
+  font-size: 40px;
+  color: var(--black-color);
+}
+.icon-menu div {
+  width: 15%;
+  font-size: 20px;
+}
+.more__suggestions {
+  justify-content: flex-start;
+}
+.more__suggestions div {
+  align-items: center;
+  width: 140px;
+}
+
+.fa-gear:hover {
+  animation: gearAnimation 0.15s linear infinite;
+}
+
+@keyframes gearAnimation {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
